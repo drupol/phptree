@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="resources/style.css">
 
         <title>
-            Class drupol\phptree\Visitor\AbstractVisitor | PhpTree API documentation
+            Class drupol\phptree\Render\GraphViz | PhpTree API documentation
         </title>
     </head>
 
@@ -80,11 +80,11 @@
         </li>
             <li class="backslash">\</li>
         <li>
-            <a href="namespace-drupol.phptree.Visitor.html">Visitor</a>
+            <a href="namespace-drupol.phptree.Render.html">Render</a>
         </li>
 
         <li class="backslash">\</li>
-        <li class="active">AbstractVisitor</li>
+        <li class="active">GraphViz</li>
 </ol>
                         </div>
                     </div>
@@ -94,11 +94,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-    <h1>AbstractVisitor</h1>
+    <h1>GraphViz</h1>
 
         <div class="panel panel-default">
             <div class="panel-body">
-                Class AbstractVisitor
+                Class GraphViz
             </div>
         </div>
 
@@ -106,25 +106,19 @@
             <dd>
 
                     implements
-                        <a href="interface-drupol.phptree.Visitor.VisitorInterface.html">
-                            drupol\phptree\Visitor\VisitorInterface
+                        <a href="interface-drupol.phptree.Render.RendererInterface.html">
+                            drupol\phptree\Render\RendererInterface
                         </a>
 
             </dd>
         </dl>
 
 
-        <div>
-            <h2>Known subclasses</h2>
-            <a href="class-drupol.phptree.Visitor.BreadthFirstVisitor.html">drupol\phptree\Visitor\BreadthFirstVisitor</a>, 
-            <a href="class-drupol.phptree.Visitor.PostOrderVisitor.html">drupol\phptree\Visitor\PostOrderVisitor</a>, 
-            <a href="class-drupol.phptree.Visitor.PreOrderVisitor.html">drupol\phptree\Visitor\PreOrderVisitor</a>
-        </div>
 
     <div class="info">
-        <strong>Abstract</strong><br>
+        
 
-            <a href="source-class-drupol.phptree.Visitor.AbstractVisitor.html" class="open-source-code">Open source code</a>
+            <a href="source-class-drupol.phptree.Render.GraphViz.html" class="open-source-code">Open source code</a>
         <br>
     </div>
 
@@ -133,11 +127,11 @@
 
 
 
-<tr id="_traverse">
+<tr id="___construct">
 
     <td class="attributes col-md-1">
         <code class="keyword">
-                abstract public 
+                 public 
                 
                 
         </code>
@@ -145,11 +139,43 @@
 
     <td class="name">
         <div>
-            <a class="anchor pull-right" href="#_traverse">#</a>
-            <code><a href="source-class-drupol.phptree.Visitor.AbstractVisitor.html#17">traverse</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+            <a class="anchor pull-right" href="#___construct">#</a>
+            <code><a href="source-class-drupol.phptree.Render.GraphViz.html#41-47">__construct</a>( <span> <a href="interface-drupol.phptree.Visitor.VisitorInterface.html">drupol\phptree\Visitor\VisitorInterface</a> <span class="property-name">$visitor</span> </span> )</code>
 
             <div class="description">
-                {@inheritdoc}
+                GraphViz constructor.
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+
+<tr id="_render">
+
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </td>
+
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#_render">#</a>
+            <code><a href="source-class-drupol.phptree.Render.GraphViz.html#54-77">render</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+
+            <div class="description">
+                
 
 
 
@@ -161,11 +187,43 @@
                         <h2>Implementation of</h2>
                         <div>
                             <code>
-                                <a href="interface-drupol.phptree.Visitor.VisitorInterface.html#_traverse">
-                                    drupol\phptree\Visitor\VisitorInterface::traverse()
+                                <a href="interface-drupol.phptree.Render.RendererInterface.html#_render">
+                                    drupol\phptree\Render\RendererInterface::render()
                                 </a>
                             </code>
                         </div>
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+
+<tr id="_hash">
+
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 protected 
+                
+                
+        </code>
+    </td>
+
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#_hash">#</a>
+            <code><a href="source-class-drupol.phptree.Render.GraphViz.html#84-87">hash</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+
+            <div class="description">
+                
+
+
+
+
+
+
+
+
             </div>
         </div>
     </td>

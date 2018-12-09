@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="resources/style.css">
 
         <title>
-            Class drupol\phptree\Node\ValueNode | PhpTree API documentation
+            Class drupol\phptree\Node\NaryNode | PhpTree API documentation
         </title>
     </head>
 
@@ -84,7 +84,7 @@
         </li>
 
         <li class="backslash">\</li>
-        <li class="active">ValueNode</li>
+        <li class="active">NaryNode</li>
 </ol>
                         </div>
                     </div>
@@ -94,31 +94,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-    <h1>ValueNode</h1>
+    <h1>NaryNode</h1>
 
         <div class="panel panel-default">
             <div class="panel-body">
-                Class ValueNode
+                Class NaryNode
             </div>
         </div>
 
         <dl class="tree">
             <dd>
                     extends
-                    <a href="class-drupol.phptree.Node.NaryNode.html">
-                        drupol\phptree\Node\NaryNode
+                    <a href="class-drupol.phptree.Node.Node.html">
+                        drupol\phptree\Node\Node
                     </a>
 
-                    implements
-                        <a href="interface-Countable.html">
-                            Countable
-                        </a>, 
-                        <a href="interface-drupol.phptree.Node.NodeInterface.html">
-                            drupol\phptree\Node\NodeInterface
-                        </a>, 
-                        <a href="interface-drupol.phptree.Node.ValueNodeInterface.html">
-                            drupol\phptree\Node\ValueNodeInterface
-                        </a>
 
             </dd>
         </dl>
@@ -126,13 +116,14 @@
 
         <div>
             <h2>Known subclasses</h2>
-            <a href="class-drupol.phptree.Node.KeyValueNode.html">drupol\phptree\Node\KeyValueNode</a>
+            <a href="class-drupol.phptree.Node.KeyValueNode.html">drupol\phptree\Node\KeyValueNode</a>, 
+            <a href="class-drupol.phptree.Node.ValueNode.html">drupol\phptree\Node\ValueNode</a>
         </div>
 
     <div class="info">
         
 
-            <a href="source-class-drupol.phptree.Node.ValueNode.html" class="open-source-code">Open source code</a>
+            <a href="source-class-drupol.phptree.Node.NaryNode.html" class="open-source-code">Open source code</a>
         <br>
     </div>
 
@@ -154,10 +145,10 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#___construct">#</a>
-            <code><a href="source-class-drupol.phptree.Node.ValueNode.html#24-29">__construct</a>( <span> mixed|null <span class="property-name">$value</span> = <span class="php-keyword1">NULL</span></span>, <span> int <span class="property-name">$capacity</span> = <span class="php-num">0</span></span>, <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$parent</span> = <span class="php-keyword1">NULL</span></span> )</code>
+            <code><a href="source-class-drupol.phptree.Node.NaryNode.html#25-34">__construct</a>( <span> int <span class="property-name">$capacity</span> = <span class="php-num">0</span></span>, <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$parent</span> = <span class="php-keyword1">NULL</span></span> )</code>
 
             <div class="description">
-                KeyValueNode constructor.
+                Node constructor.
 
 
 
@@ -168,8 +159,8 @@
                         <h2>Overrides</h2>
                         <div>
                             <code>
-                                <a href="class-drupol.phptree.Node.NaryNode.html#___construct">
-                                    drupol\phptree\Node\NaryNode::__construct()
+                                <a href="class-drupol.phptree.Node.Node.html#___construct">
+                                    drupol\phptree\Node\Node::__construct()
                                 </a>
                             </code>
                         </div>
@@ -181,7 +172,7 @@
 
 
 
-<tr id="_getValue">
+<tr id="_capacity">
 
     <td class="attributes col-md-1">
         <code class="keyword">
@@ -193,8 +184,8 @@
 
     <td class="name">
         <div>
-            <a class="anchor pull-right" href="#_getValue">#</a>
-            <code><a href="source-class-drupol.phptree.Node.ValueNode.html#34-37">getValue</a>( )</code>
+            <a class="anchor pull-right" href="#_capacity">#</a>
+            <code><a href="source-class-drupol.phptree.Node.NaryNode.html#39-42">capacity</a>( )</code>
 
             <div class="description">
                 {@inheritdoc}
@@ -206,34 +197,52 @@
 
 
 
-                        <h2>Implementation of</h2>
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+
+<tr id="_add">
+
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </td>
+
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#_add">#</a>
+            <code><a href="source-class-drupol.phptree.Node.NaryNode.html#47-73">add</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$nodes</span> ,…</span> )</code>
+
+            <div class="description">
+                {@inheritdoc}
+
+
+
+
+
+
+
+                        <h2>Overrides</h2>
                         <div>
                             <code>
-                                <a href="interface-drupol.phptree.Node.ValueNodeInterface.html#_getValue">
-                                    drupol\phptree\Node\ValueNodeInterface::getValue()
+                                <a href="class-drupol.phptree.Node.Node.html#_add">
+                                    drupol\phptree\Node\Node::add()
                                 </a>
                             </code>
                         </div>
+
             </div>
         </div>
     </td>
 </tr>
         </table>
 
-        <table class="summary table table-bordered table-responsive table-striped">
-            <tr>
-                <th>
-                    Methods inherited from <a href="class-drupol.phptree.Node.NaryNode.html#methods">drupol\phptree\Node\NaryNode</a>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                        <code><a href="class-drupol.phptree.Node.NaryNode.html#___construct">__construct()</a></code>, 
-                        <code><a href="class-drupol.phptree.Node.NaryNode.html#_capacity">capacity()</a></code>, 
-                        <code><a href="class-drupol.phptree.Node.NaryNode.html#_add">add()</a></code>
-                </td>
-            </tr>
-        </table>
         <table class="summary table table-bordered table-responsive table-striped">
             <tr>
                 <th>

@@ -70,19 +70,19 @@
 </span><span class="l" id="line-2">
 </span><span class="l" id="line-3"><span class="php-keyword1">declare</span>(strict_types = <span class="php-num">1</span>);
 </span><span class="l" id="line-4">
-</span><span class="l" id="line-5"><span class="php-keyword1">namespace</span> drupol\phptree\Visitor;
+</span><span class="l" id="line-5"><span class="php-keyword1">namespace</span> drupol\phptree\Render;
 </span><span class="l" id="line-6">
 </span><span class="l" id="line-7"><span class="php-keyword1">use</span> drupol\phptree\Node\NodeInterface;
 </span><span class="l" id="line-8">
 </span><span class="l" id="line-9"><span class="php-comment">/**
-</span></span><span class="l" id="line-10"><span class="php-comment"> * Class AbstractVisitor
+</span></span><span class="l" id="line-10"><span class="php-comment"> * Interface RendererInterface
 </span></span><span class="l" id="line-11"><span class="php-comment"> */</span>
-</span><span class="l" id="line-12"><span class="php-keyword1">abstract</span> <span class="php-keyword1">class</span> AbstractVisitor <span class="php-keyword1">implements</span> VisitorInterface
+</span><span class="l" id="line-12"><span class="php-keyword1">interface</span> RendererInterface
 </span><span class="l" id="line-13">{
 </span><span class="l" id="line-14">    <span class="php-comment">/**
-</span></span><span class="l" id="line-15"><span class="php-comment">     * {@inheritdoc}
+</span></span><span class="l" id="line-15"><span class="php-comment">     * @param \drupol\phptree\Node\NodeInterface $node
 </span></span><span class="l" id="line-16"><span class="php-comment">     */</span>
-</span><span class="l" id="line-17">    <span class="php-keyword1">abstract</span> <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> traverse(NodeInterface <span class="php-var">$node</span>): \Traversable;
+</span><span class="l" id="line-17">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> render(NodeInterface <span class="php-var">$node</span>);
 </span><span class="l" id="line-18">}
 </span><span class="l" id="line-19"></span><br></code></pre>
     </div>
