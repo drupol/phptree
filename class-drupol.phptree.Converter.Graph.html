@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="resources/style.css">
 
         <title>
-            Class drupol\phptree\Render\GraphViz | PhpTree API documentation
+            Class drupol\phptree\Converter\Graph | PhpTree API documentation
         </title>
     </head>
 
@@ -80,11 +80,11 @@
         </li>
             <li class="backslash">\</li>
         <li>
-            <a href="namespace-drupol.phptree.Render.html">Render</a>
+            <a href="namespace-drupol.phptree.Converter.html">Converter</a>
         </li>
 
         <li class="backslash">\</li>
-        <li class="active">GraphViz</li>
+        <li class="active">Graph</li>
 </ol>
                         </div>
                     </div>
@@ -94,11 +94,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-    <h1>GraphViz</h1>
+    <h1>Graph</h1>
 
         <div class="panel panel-default">
             <div class="panel-body">
-                Class GraphViz
+                Class Graph
             </div>
         </div>
 
@@ -106,8 +106,8 @@
             <dd>
 
                     implements
-                        <a href="interface-drupol.phptree.Render.RendererInterface.html">
-                            drupol\phptree\Render\RendererInterface
+                        <a href="interface-drupol.phptree.Converter.ConverterInterface.html">
+                            drupol\phptree\Converter\ConverterInterface
                         </a>
 
             </dd>
@@ -118,7 +118,7 @@
     <div class="info">
         
 
-            <a href="source-class-drupol.phptree.Render.GraphViz.html" class="open-source-code">Open source code</a>
+            <a href="source-class-drupol.phptree.Converter.Graph.html" class="open-source-code">Open source code</a>
         <br>
     </div>
 
@@ -140,10 +140,10 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#___construct">#</a>
-            <code><a href="source-class-drupol.phptree.Render.GraphViz.html#37-42">__construct</a>( <span> <a href="interface-drupol.phptree.Visitor.VisitorInterface.html">drupol\phptree\Visitor\VisitorInterface</a> <span class="property-name">$visitor</span> </span>, <span> Fhaculty\Graph\Graph <span class="property-name">$graph</span> </span>, <span> Graphp\GraphViz\GraphViz <span class="property-name">$graphViz</span> </span> )</code>
+            <code><a href="source-class-drupol.phptree.Converter.Graph.html#33-37">__construct</a>( <span> Fhaculty\Graph\Graph <span class="property-name">$graph</span> = <span class="php-keyword1">NULL</span></span>, <span> <a href="interface-drupol.phptree.Visitor.VisitorInterface.html">drupol\phptree\Visitor\VisitorInterface</a> <span class="property-name">$visitor</span> = <span class="php-keyword1">NULL</span></span> )</code>
 
             <div class="description">
-                GraphViz constructor.
+                Graph constructor.
 
 
 
@@ -159,7 +159,7 @@
 
 
 
-<tr id="_render">
+<tr id="_convert">
 
     <td class="attributes col-md-1">
         <code class="keyword">
@@ -171,8 +171,8 @@
 
     <td class="name">
         <div>
-            <a class="anchor pull-right" href="#_render">#</a>
-            <code><a href="source-class-drupol.phptree.Render.GraphViz.html#49-52">render</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+            <a class="anchor pull-right" href="#_convert">#</a>
+            <code><a href="source-class-drupol.phptree.Converter.Graph.html#44-65">convert</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
 
             <div class="description">
                 
@@ -187,43 +187,11 @@
                         <h2>Implementation of</h2>
                         <div>
                             <code>
-                                <a href="interface-drupol.phptree.Render.RendererInterface.html#_render">
-                                    drupol\phptree\Render\RendererInterface::render()
+                                <a href="interface-drupol.phptree.Converter.ConverterInterface.html#_convert">
+                                    drupol\phptree\Converter\ConverterInterface::convert()
                                 </a>
                             </code>
                         </div>
-            </div>
-        </div>
-    </td>
-</tr>
-
-
-
-<tr id="_getGraph">
-
-    <td class="attributes col-md-1">
-        <code class="keyword">
-                 public 
-                
-                
-        </code>
-    </td>
-
-    <td class="name">
-        <div>
-            <a class="anchor pull-right" href="#_getGraph">#</a>
-            <code><a href="source-class-drupol.phptree.Render.GraphViz.html#59-80">getGraph</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
-
-            <div class="description">
-                
-
-
-
-
-
-
-
-
             </div>
         </div>
     </td>
@@ -244,7 +212,7 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#_hash">#</a>
-            <code><a href="source-class-drupol.phptree.Render.GraphViz.html#87-90">hash</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+            <code><a href="source-class-drupol.phptree.Converter.Graph.html#72-75">hash</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
 
             <div class="description">
                 
