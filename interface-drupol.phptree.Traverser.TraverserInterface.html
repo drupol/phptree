@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="resources/style.css">
 
         <title>
-            Class drupol\phptree\Visitor\BreadthFirstVisitor | PhpTree API documentation
+            Interface drupol\phptree\Traverser\TraverserInterface | PhpTree API documentation
         </title>
     </head>
 
@@ -67,7 +67,7 @@
 
 
 <div class="pull-left type">
-    <span class="label label-success">Class</span>
+    <span class="label label-info">Interface</span>
 </div>
 
 <ol class="breadcrumb pull-left">
@@ -80,11 +80,11 @@
         </li>
             <li class="backslash">\</li>
         <li>
-            <a href="namespace-drupol.phptree.Visitor.html">Visitor</a>
+            <a href="namespace-drupol.phptree.Traverser.html">Traverser</a>
         </li>
 
         <li class="backslash">\</li>
-        <li class="active">BreadthFirstVisitor</li>
+        <li class="active">TraverserInterface</li>
 </ol>
                         </div>
                     </div>
@@ -94,35 +94,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-    <h1>BreadthFirstVisitor</h1>
+    <h1>TraverserInterface</h1>
 
         <div class="panel panel-default">
             <div class="panel-body">
-                Class BreadthFirstVisitor
+                Interface TraverserInterface
             </div>
         </div>
 
-        <dl class="tree">
-            <dd>
-                    extends
-                    <a href="class-drupol.phptree.Visitor.AbstractVisitor.html">
-                        drupol\phptree\Visitor\AbstractVisitor
+
+        <div>
+            <h2>Known implementers</h2>
+            <p>
+                    <a href="class-drupol.phptree.Traverser.BreadthFirst.html">
+                        drupol\phptree\Traverser\BreadthFirst
+                    </a>, 
+                    <a href="class-drupol.phptree.Traverser.InOrder.html">
+                        drupol\phptree\Traverser\InOrder
+                    </a>, 
+                    <a href="class-drupol.phptree.Traverser.PostOrder.html">
+                        drupol\phptree\Traverser\PostOrder
+                    </a>, 
+                    <a href="class-drupol.phptree.Traverser.PreOrder.html">
+                        drupol\phptree\Traverser\PreOrder
                     </a>
-
-
-            </dd>
-        </dl>
-
-
+            </p>
+        </div>
 
     <div class="info">
-        
-
-            <a href="source-class-drupol.phptree.Visitor.BreadthFirstVisitor.html" class="open-source-code">Open source code</a>
+            <a href="source-interface-drupol.phptree.Traverser.TraverserInterface.html" class="open-source-code">Open source code</a>
         <br>
     </div>
 
-        <table class="summary table table-bordered table-responsive table-striped" id="methods">
+        <table class="summary table table-responsive table-bordered table-striped" id="methods">
             <tr><th colspan="3">Methods Summary</th></tr>
 
 
@@ -131,20 +135,18 @@
 
     <td class="attributes col-md-1">
         <code class="keyword">
-                 public 
                 
-                
+                public
         </code>
     </td>
 
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#_traverse">#</a>
-            <code><a href="source-class-drupol.phptree.Visitor.BreadthFirstVisitor.html#17-35">traverse</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span>, <span> int <span class="property-name">$level</span> = <span class="php-keyword1">NULL</span></span> )</code>
+            <code><a href="source-interface-drupol.phptree.Traverser.TraverserInterface.html#22">traverse</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
 
             <div class="description">
-                {@inheritdoc}
-
+                Traverse the tree.
 
 
 
@@ -157,23 +159,6 @@
     </td>
 </tr>
         </table>
-
-        <table class="summary table table-bordered table-responsive table-striped">
-            <tr>
-                <th>
-                    Methods inherited from <a href="class-drupol.phptree.Visitor.AbstractVisitor.html#methods">drupol\phptree\Visitor\AbstractVisitor</a>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                        <code><a href="class-drupol.phptree.Visitor.AbstractVisitor.html#_traverse">traverse()</a></code>
-                </td>
-            </tr>
-        </table>
-
-
-
-
 
 
     <div id="footer">

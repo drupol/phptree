@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="resources/style.css">
 
         <title>
-            Class drupol\phptree\Visitor\AbstractVisitor | PhpTree API documentation
+            Class drupol\phptree\Traverser\BreadthFirst | PhpTree API documentation
         </title>
     </head>
 
@@ -80,11 +80,11 @@
         </li>
             <li class="backslash">\</li>
         <li>
-            <a href="namespace-drupol.phptree.Visitor.html">Visitor</a>
+            <a href="namespace-drupol.phptree.Traverser.html">Traverser</a>
         </li>
 
         <li class="backslash">\</li>
-        <li class="active">AbstractVisitor</li>
+        <li class="active">BreadthFirst</li>
 </ol>
                         </div>
                     </div>
@@ -94,11 +94,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-    <h1>AbstractVisitor</h1>
+    <h1>BreadthFirst</h1>
 
         <div class="panel panel-default">
             <div class="panel-body">
-                Class AbstractVisitor
+                Class BreadthFirst
             </div>
         </div>
 
@@ -106,25 +106,19 @@
             <dd>
 
                     implements
-                        <a href="interface-drupol.phptree.Visitor.VisitorInterface.html">
-                            drupol\phptree\Visitor\VisitorInterface
+                        <a href="interface-drupol.phptree.Traverser.TraverserInterface.html">
+                            drupol\phptree\Traverser\TraverserInterface
                         </a>
 
             </dd>
         </dl>
 
 
-        <div>
-            <h2>Known subclasses</h2>
-            <a href="class-drupol.phptree.Visitor.BreadthFirstVisitor.html">drupol\phptree\Visitor\BreadthFirstVisitor</a>, 
-            <a href="class-drupol.phptree.Visitor.PostOrderVisitor.html">drupol\phptree\Visitor\PostOrderVisitor</a>, 
-            <a href="class-drupol.phptree.Visitor.PreOrderVisitor.html">drupol\phptree\Visitor\PreOrderVisitor</a>
-        </div>
 
     <div class="info">
-        <strong>Abstract</strong><br>
+        
 
-            <a href="source-class-drupol.phptree.Visitor.AbstractVisitor.html" class="open-source-code">Open source code</a>
+            <a href="source-class-drupol.phptree.Traverser.BreadthFirst.html" class="open-source-code">Open source code</a>
         <br>
     </div>
 
@@ -137,7 +131,7 @@
 
     <td class="attributes col-md-1">
         <code class="keyword">
-                abstract public 
+                 public 
                 
                 
         </code>
@@ -146,7 +140,7 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#_traverse">#</a>
-            <code><a href="source-class-drupol.phptree.Visitor.AbstractVisitor.html#17">traverse</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span>, <span> int <span class="property-name">$level</span> = <span class="php-keyword1">NULL</span></span> )</code>
+            <code><a href="source-class-drupol.phptree.Traverser.BreadthFirst.html#17-31">traverse</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
 
             <div class="description">
                 {@inheritdoc}
@@ -161,8 +155,8 @@
                         <h2>Implementation of</h2>
                         <div>
                             <code>
-                                <a href="interface-drupol.phptree.Visitor.VisitorInterface.html#_traverse">
-                                    drupol\phptree\Visitor\VisitorInterface::traverse()
+                                <a href="interface-drupol.phptree.Traverser.TraverserInterface.html#_traverse">
+                                    drupol\phptree\Traverser\TraverserInterface::traverse()
                                 </a>
                             </code>
                         </div>

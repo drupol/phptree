@@ -72,7 +72,7 @@
 </span><span class="l" id="line-4">
 </span><span class="l" id="line-5"><span class="php-keyword1">namespace</span> drupol\phptree\Node;
 </span><span class="l" id="line-6">
-</span><span class="l" id="line-7"><span class="php-keyword1">use</span> drupol\phptree\Visitor\BreadthFirstVisitor;
+</span><span class="l" id="line-7"><span class="php-keyword1">use</span> drupol\phptree\Traverser\BreadthFirst;
 </span><span class="l" id="line-8">
 </span><span class="l" id="line-9"><span class="php-comment">/**
 </span></span><span class="l" id="line-10"><span class="php-comment"> * Class NaryNode
@@ -122,9 +122,9 @@
 </span><span class="l" id="line-54">            }
 </span><span class="l" id="line-55">
 </span><span class="l" id="line-56">            <span class="php-comment">// @todo Find a way to get rid of this.</span>
-</span><span class="l" id="line-57">            <span class="php-var">$visitor</span> = <span class="php-keyword1">new</span> BreadthFirstVisitor();
+</span><span class="l" id="line-57">            <span class="php-var">$traverser</span> = <span class="php-keyword1">new</span> BreadthFirst();
 </span><span class="l" id="line-58">
-</span><span class="l" id="line-59">            <span class="php-keyword1">foreach</span> (<span class="php-var">$visitor</span>-&gt;traverse(<span class="php-var">$this</span>) <span class="php-keyword1">as</span> <span class="php-var">$node_visited</span>) {
+</span><span class="l" id="line-59">            <span class="php-keyword1">foreach</span> (<span class="php-var">$traverser</span>-&gt;traverse(<span class="php-var">$this</span>) <span class="php-keyword1">as</span> <span class="php-var">$node_visited</span>) {
 </span><span class="l" id="line-60">                <span class="php-keyword1">if</span> (<span class="php-var">$node_visited</span>-&gt;degree() &gt;= <span class="php-var">$capacity</span>) {
 </span><span class="l" id="line-61">                    <span class="php-keyword1">continue</span>;
 </span><span class="l" id="line-62">                }
