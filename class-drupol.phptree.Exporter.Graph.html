@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="resources/style.css">
 
         <title>
-            Class drupol\phptree\Converter\Graph | PhpTree API documentation
+            Class drupol\phptree\Exporter\Graph | PhpTree API documentation
         </title>
     </head>
 
@@ -80,7 +80,7 @@
         </li>
             <li class="backslash">\</li>
         <li>
-            <a href="namespace-drupol.phptree.Converter.html">Converter</a>
+            <a href="namespace-drupol.phptree.Exporter.html">Exporter</a>
         </li>
 
         <li class="backslash">\</li>
@@ -106,8 +106,8 @@
             <dd>
 
                     implements
-                        <a href="interface-drupol.phptree.Converter.ConverterInterface.html">
-                            drupol\phptree\Converter\ConverterInterface
+                        <a href="interface-drupol.phptree.Exporter.ExporterInterface.html">
+                            drupol\phptree\Exporter\ExporterInterface
                         </a>
 
             </dd>
@@ -118,7 +118,7 @@
     <div class="info">
         
 
-            <a href="source-class-drupol.phptree.Converter.Graph.html" class="open-source-code">Open source code</a>
+            <a href="source-class-drupol.phptree.Exporter.Graph.html" class="open-source-code">Open source code</a>
         <br>
     </div>
 
@@ -140,7 +140,7 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#___construct">#</a>
-            <code><a href="source-class-drupol.phptree.Converter.Graph.html#34-38">__construct</a>( <span> Fhaculty\Graph\Graph <span class="property-name">$graph</span> = <span class="php-keyword1">NULL</span></span>, <span> <a href="interface-drupol.phptree.Traverser.TraverserInterface.html">drupol\phptree\Traverser\TraverserInterface</a> <span class="property-name">$traverser</span> = <span class="php-keyword1">NULL</span></span> )</code>
+            <code><a href="source-class-drupol.phptree.Exporter.Graph.html#35-39">__construct</a>( <span> Fhaculty\Graph\Graph <span class="property-name">$graph</span> = <span class="php-keyword1">NULL</span></span>, <span> <a href="interface-drupol.phptree.Traverser.TraverserInterface.html">drupol\phptree\Traverser\TraverserInterface</a> <span class="property-name">$traverser</span> = <span class="php-keyword1">NULL</span></span> )</code>
 
             <div class="description">
                 Graph constructor.
@@ -172,7 +172,7 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#_getGraph">#</a>
-            <code><a href="source-class-drupol.phptree.Converter.Graph.html#43-46">getGraph</a>( )</code>
+            <code><a href="source-class-drupol.phptree.Exporter.Graph.html#44-47">getGraph</a>( )</code>
 
             <div class="description">
                 
@@ -204,7 +204,7 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#_getTraverser">#</a>
-            <code><a href="source-class-drupol.phptree.Converter.Graph.html#51-54">getTraverser</a>( )</code>
+            <code><a href="source-class-drupol.phptree.Exporter.Graph.html#52-55">getTraverser</a>( )</code>
 
             <div class="description">
                 
@@ -223,7 +223,7 @@
 
 
 
-<tr id="_convert">
+<tr id="_export">
 
     <td class="attributes col-md-1">
         <code class="keyword">
@@ -235,11 +235,11 @@
 
     <td class="name">
         <div>
-            <a class="anchor pull-right" href="#_convert">#</a>
-            <code><a href="source-class-drupol.phptree.Converter.Graph.html#61-79">convert</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+            <a class="anchor pull-right" href="#_export">#</a>
+            <code><a href="source-class-drupol.phptree.Exporter.Graph.html#66-84">export</a>( <span> <a href="interface-drupol.phptree.Node.ValueNodeInterface.html">drupol\phptree\Node\ValueNodeInterface</a> <span class="property-name">$node</span> </span> )</code>
 
             <div class="description">
-                
+                Export a node into a Graph.
 
 
 
@@ -251,8 +251,8 @@
                         <h2>Implementation of</h2>
                         <div>
                             <code>
-                                <a href="interface-drupol.phptree.Converter.ConverterInterface.html#_convert">
-                                    drupol\phptree\Converter\ConverterInterface::convert()
+                                <a href="interface-drupol.phptree.Exporter.ExporterInterface.html#_export">
+                                    drupol\phptree\Exporter\ExporterInterface::export()
                                 </a>
                             </code>
                         </div>
@@ -276,7 +276,7 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#_createVertex">#</a>
-            <code><a href="source-class-drupol.phptree.Converter.Graph.html#90-98">createVertex</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+            <code><a href="source-class-drupol.phptree.Exporter.Graph.html#95-103">createVertex</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
 
             <div class="description">
                 Create a vertex.
@@ -308,7 +308,7 @@
     <td class="name">
         <div>
             <a class="anchor pull-right" href="#_createVertexId">#</a>
-            <code><a href="source-class-drupol.phptree.Converter.Graph.html#109-112">createVertexId</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
+            <code><a href="source-class-drupol.phptree.Exporter.Graph.html#114-117">createVertexId</a>( <span> <a href="interface-drupol.phptree.Node.NodeInterface.html">drupol\phptree\Node\NodeInterface</a> <span class="property-name">$node</span> </span> )</code>
 
             <div class="description">
                 Create a vertex ID.
