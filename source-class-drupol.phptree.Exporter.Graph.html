@@ -73,7 +73,7 @@
 </span><span class="l" id="line-5"><span class="php-keyword1">namespace</span> drupol\phptree\Exporter;
 </span><span class="l" id="line-6">
 </span><span class="l" id="line-7"><span class="php-keyword1">use</span> drupol\phptree\Node\NodeInterface;
-</span><span class="l" id="line-8"><span class="php-keyword1">use</span> drupol\phptree\Traverser\BreadthFirst;
+</span><span class="l" id="line-8"><span class="php-keyword1">use</span> drupol\phptree\Traverser\PreOrder;
 </span><span class="l" id="line-9"><span class="php-keyword1">use</span> drupol\phptree\Traverser\TraverserInterface;
 </span><span class="l" id="line-10"><span class="php-keyword1">use</span> Fhaculty\Graph\Graph <span class="php-keyword1">as</span> OriginalGraph;
 </span><span class="l" id="line-11"><span class="php-keyword1">use</span> Fhaculty\Graph\Vertex;
@@ -106,7 +106,7 @@
 </span><span class="l" id="line-38">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(OriginalGraph <span class="php-var">$graph</span> = <span class="php-keyword1">null</span>, TraverserInterface <span class="php-var">$traverser</span> = <span class="php-keyword1">null</span>)
 </span><span class="l" id="line-39">    {
 </span><span class="l" id="line-40">        <span class="php-var">$this</span>-&gt;graph = <span class="php-var">$graph</span> ?? <span class="php-keyword1">new</span> OriginalGraph();
-</span><span class="l" id="line-41">        <span class="php-var">$this</span>-&gt;traverser = <span class="php-var">$traverser</span> ?? <span class="php-keyword1">new</span> BreadthFirst();
+</span><span class="l" id="line-41">        <span class="php-var">$this</span>-&gt;traverser = <span class="php-var">$traverser</span> ?? <span class="php-keyword1">new</span> PreOrder();
 </span><span class="l" id="line-42">    }
 </span><span class="l" id="line-43">
 </span><span class="l" id="line-44">    <span class="php-comment">/**
