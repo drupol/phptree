@@ -75,7 +75,7 @@
 </span><span class="l" id="line-7"><span class="php-keyword1">use</span> drupol\phptree\Node\NodeInterface;
 </span><span class="l" id="line-8">
 </span><span class="l" id="line-9"><span class="php-comment">/**
-</span></span><span class="l" id="line-10"><span class="php-comment"> * Class InOrder
+</span></span><span class="l" id="line-10"><span class="php-comment"> * Class InOrder.
 </span></span><span class="l" id="line-11"><span class="php-comment"> */</span>
 </span><span class="l" id="line-12"><span class="php-keyword1">class</span> InOrder <span class="php-keyword1">implements</span> TraverserInterface
 </span><span class="l" id="line-13">{
@@ -99,17 +99,17 @@
 </span></span><span class="l" id="line-31"><span class="php-comment">     */</span>
 </span><span class="l" id="line-32">    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> doTraverse(NodeInterface <span class="php-var">$node</span>): \Traversable
 </span><span class="l" id="line-33">    {
-</span><span class="l" id="line-34">        <span class="php-var">$middle</span> = \<span class="php-keyword2">floor</span>(<span class="php-var">$node</span>-&gt;degree()/<span class="php-num">2</span>);
+</span><span class="l" id="line-34">        <span class="php-var">$middle</span> = \<span class="php-keyword2">floor</span>(<span class="php-var">$node</span>-&gt;degree() / <span class="php-num">2</span>);
 </span><span class="l" id="line-35">
 </span><span class="l" id="line-36">        <span class="php-keyword1">foreach</span> (<span class="php-var">$node</span>-&gt;children() <span class="php-keyword1">as</span> <span class="php-var">$key</span> =&gt; <span class="php-var">$child</span>) {
 </span><span class="l" id="line-37">            <span class="php-keyword1">if</span> ((int) <span class="php-var">$key</span> === (int) <span class="php-var">$middle</span>) {
 </span><span class="l" id="line-38">                yield <span class="php-var">$this</span>-&gt;index =&gt; <span class="php-var">$node</span>;
-</span><span class="l" id="line-39">                <span class="php-var">$this</span>-&gt;index++;
+</span><span class="l" id="line-39">                ++<span class="php-var">$this</span>-&gt;index;
 </span><span class="l" id="line-40">            }
 </span><span class="l" id="line-41">
 </span><span class="l" id="line-42">            <span class="php-keyword1">if</span> (<span class="php-var">$child</span>-&gt;isLeaf()) {
 </span><span class="l" id="line-43">                yield <span class="php-var">$this</span>-&gt;index =&gt; <span class="php-var">$child</span>;
-</span><span class="l" id="line-44">                <span class="php-var">$this</span>-&gt;index++;
+</span><span class="l" id="line-44">                ++<span class="php-var">$this</span>-&gt;index;
 </span><span class="l" id="line-45">            }
 </span><span class="l" id="line-46">
 </span><span class="l" id="line-47">            yield from <span class="php-var">$this</span>-&gt;doTraverse(<span class="php-var">$child</span>);

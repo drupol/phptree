@@ -75,7 +75,7 @@
 </span><span class="l" id="line-7"><span class="php-keyword1">use</span> drupol\phptree\Node\NodeInterface;
 </span><span class="l" id="line-8">
 </span><span class="l" id="line-9"><span class="php-comment">/**
-</span></span><span class="l" id="line-10"><span class="php-comment"> * Class BreadthFirst
+</span></span><span class="l" id="line-10"><span class="php-comment"> * Class BreadthFirst.
 </span></span><span class="l" id="line-11"><span class="php-comment"> */</span>
 </span><span class="l" id="line-12"><span class="php-keyword1">class</span> BreadthFirst <span class="php-keyword1">implements</span> TraverserInterface
 </span><span class="l" id="line-13">{
@@ -89,7 +89,7 @@
 </span><span class="l" id="line-21">
 </span><span class="l" id="line-22">        yield <span class="php-var">$node</span>;
 </span><span class="l" id="line-23">
-</span><span class="l" id="line-24">        <span class="php-keyword1">while</span> (<span class="php-var">$queue</span>-&gt;<span class="php-keyword2">count</span>() &gt; <span class="php-num">0</span>) {
+</span><span class="l" id="line-24">        <span class="php-keyword1">while</span> (<span class="php-num">0</span> &lt; <span class="php-var">$queue</span>-&gt;<span class="php-keyword2">count</span>()) {
 </span><span class="l" id="line-25">            <span class="php-keyword1">foreach</span> (<span class="php-var">$queue</span>-&gt;dequeue()-&gt;children() <span class="php-keyword1">as</span> <span class="php-var">$child</span>) {
 </span><span class="l" id="line-26">                <span class="php-var">$queue</span>-&gt;enqueue(<span class="php-var">$child</span>);
 </span><span class="l" id="line-27">
