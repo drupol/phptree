@@ -87,19 +87,19 @@
 </span><span class="l" id="line-19">
 </span><span class="l" id="line-20">            <span class="php-var">$hash</span> = \<span class="php-keyword2">hash</span>(<span class="php-quote">'sha256'</span>, <span class="php-var">$node</span>-&gt;getKey() . <span class="php-var">$data</span>);
 </span><span class="l" id="line-21">
-</span><span class="l" id="line-22">            <span class="php-var">$node</span> = <span class="php-keyword1">new</span> self(<span class="php-var">$hash</span>, \<span class="php-keyword2">substr</span>(<span class="php-var">$data</span>, <span class="php-num">0</span>, <span class="php-num">1</span>));
+</span><span class="l" id="line-22">            <span class="php-var">$node</span> = <span class="php-keyword1">new</span> TrieNode(<span class="php-var">$hash</span>, \<span class="php-keyword2">substr</span>(<span class="php-var">$data</span>, <span class="php-num">0</span>, <span class="php-num">1</span>));
 </span><span class="l" id="line-23">            <span class="php-var">$parent</span> = <span class="php-var">$this</span>-&gt;append(<span class="php-var">$node</span>);
 </span><span class="l" id="line-24">
 </span><span class="l" id="line-25">            <span class="php-var">$dataWithoutFirstLetter</span> = \<span class="php-keyword2">substr</span>(<span class="php-var">$data</span>, <span class="php-num">1</span>);
 </span><span class="l" id="line-26">            <span class="php-keyword1">if</span> (<span class="php-quote">''</span> &lt; <span class="php-var">$dataWithoutFirstLetter</span>) {
-</span><span class="l" id="line-27">                <span class="php-var">$parent</span>-&gt;add(<span class="php-keyword1">new</span> self(<span class="php-var">$hash</span>, <span class="php-var">$dataWithoutFirstLetter</span>));
+</span><span class="l" id="line-27">                <span class="php-var">$parent</span>-&gt;add(<span class="php-keyword1">new</span> TrieNode(<span class="php-var">$hash</span>, <span class="php-var">$dataWithoutFirstLetter</span>));
 </span><span class="l" id="line-28">            } <span class="php-keyword1">else</span> {
 </span><span class="l" id="line-29">                <span class="php-var">$nodes</span> = [<span class="php-var">$node</span>-&gt;getValue()];
 </span><span class="l" id="line-30">                <span class="php-keyword1">foreach</span> (<span class="php-var">$node</span>-&gt;getAncestors() <span class="php-keyword1">as</span> <span class="php-var">$ancestor</span>) {
 </span><span class="l" id="line-31">                    <span class="php-var">$nodes</span>[] = <span class="php-var">$ancestor</span>-&gt;getValue();
 </span><span class="l" id="line-32">                }
 </span><span class="l" id="line-33">                \<span class="php-keyword2">array_pop</span>(<span class="php-var">$nodes</span>);
-</span><span class="l" id="line-34">                <span class="php-var">$node</span>-&gt;append(<span class="php-keyword1">new</span> self(<span class="php-var">$hash</span>, \<span class="php-keyword2">strrev</span>(\<span class="php-keyword2">implode</span>(<span class="php-quote">''</span>, <span class="php-var">$nodes</span>))));
+</span><span class="l" id="line-34">                <span class="php-var">$node</span>-&gt;append(<span class="php-keyword1">new</span> TrieNode(<span class="php-var">$hash</span>, \<span class="php-keyword2">strrev</span>(\<span class="php-keyword2">implode</span>(<span class="php-quote">''</span>, <span class="php-var">$nodes</span>))));
 </span><span class="l" id="line-35">            }
 </span><span class="l" id="line-36">        }
 </span><span class="l" id="line-37">

@@ -100,7 +100,7 @@
 </span><span class="l" id="line-32">    <span class="php-comment">/**
 </span></span><span class="l" id="line-33"><span class="php-comment">     * Graph constructor.
 </span></span><span class="l" id="line-34"><span class="php-comment">     *
-</span></span><span class="l" id="line-35"><span class="php-comment">     * @param \Fhaculty\Graph\Graph                             $graph
+</span></span><span class="l" id="line-35"><span class="php-comment">     * @param \Fhaculty\Graph\Graph $graph
 </span></span><span class="l" id="line-36"><span class="php-comment">     * @param null|\drupol\phptree\Traverser\TraverserInterface $traverser
 </span></span><span class="l" id="line-37"><span class="php-comment">     */</span>
 </span><span class="l" id="line-38">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(OriginalGraph <span class="php-var">$graph</span> = <span class="php-keyword1">null</span>, TraverserInterface <span class="php-var">$traverser</span> = <span class="php-keyword1">null</span>)
@@ -152,10 +152,10 @@
 </span></span><span class="l" id="line-84"><span class="php-comment">     * Create a vertex.
 </span></span><span class="l" id="line-85"><span class="php-comment">     *
 </span></span><span class="l" id="line-86"><span class="php-comment">     * @param \drupol\phptree\Node\NodeInterface $node
-</span></span><span class="l" id="line-87"><span class="php-comment">     *                                                 The node
+</span></span><span class="l" id="line-87"><span class="php-comment">     *   The node
 </span></span><span class="l" id="line-88"><span class="php-comment">     *
 </span></span><span class="l" id="line-89"><span class="php-comment">     * @return \Fhaculty\Graph\Vertex
-</span></span><span class="l" id="line-90"><span class="php-comment">     *                                A vertex
+</span></span><span class="l" id="line-90"><span class="php-comment">     *   A vertex
 </span></span><span class="l" id="line-91"><span class="php-comment">     */</span>
 </span><span class="l" id="line-92">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> createVertex(NodeInterface <span class="php-var">$node</span>): Vertex
 </span><span class="l" id="line-93">    {
@@ -180,10 +180,10 @@
 </span></span><span class="l" id="line-112"><span class="php-comment">     * Create a vertex ID.
 </span></span><span class="l" id="line-113"><span class="php-comment">     *
 </span></span><span class="l" id="line-114"><span class="php-comment">     * @param \drupol\phptree\Node\NodeInterface $node
-</span></span><span class="l" id="line-115"><span class="php-comment">     *                                                 The node
+</span></span><span class="l" id="line-115"><span class="php-comment">     *   The node
 </span></span><span class="l" id="line-116"><span class="php-comment">     *
 </span></span><span class="l" id="line-117"><span class="php-comment">     * @return null|int|string
-</span></span><span class="l" id="line-118"><span class="php-comment">     *                         A vertex ID
+</span></span><span class="l" id="line-118"><span class="php-comment">     *   A vertex ID
 </span></span><span class="l" id="line-119"><span class="php-comment">     */</span>
 </span><span class="l" id="line-120">    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> createVertexId(NodeInterface <span class="php-var">$node</span>)
 </span><span class="l" id="line-121">    {

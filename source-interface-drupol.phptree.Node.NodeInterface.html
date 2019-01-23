@@ -81,18 +81,18 @@
 </span></span><span class="l" id="line-13"><span class="php-comment">     * The node to add.
 </span></span><span class="l" id="line-14"><span class="php-comment">     *
 </span></span><span class="l" id="line-15"><span class="php-comment">     * @param NodeInterface ...$node
-</span></span><span class="l" id="line-16"><span class="php-comment">     *                               The node to add.
+</span></span><span class="l" id="line-16"><span class="php-comment">     *   The node to add.
 </span></span><span class="l" id="line-17"><span class="php-comment">     *
 </span></span><span class="l" id="line-18"><span class="php-comment">     * @return NodeInterface
-</span></span><span class="l" id="line-19"><span class="php-comment">     *                       The node
+</span></span><span class="l" id="line-19"><span class="php-comment">     *   The node
 </span></span><span class="l" id="line-20"><span class="php-comment">     */</span>
-</span><span class="l" id="line-21">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> add(self ...<span class="php-var">$node</span>): self;
+</span><span class="l" id="line-21">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> add(NodeInterface ...<span class="php-var">$node</span>): NodeInterface;
 </span><span class="l" id="line-22">
 </span><span class="l" id="line-23">    <span class="php-comment">/**
 </span></span><span class="l" id="line-24"><span class="php-comment">     * Get the children.
 </span></span><span class="l" id="line-25"><span class="php-comment">     *
 </span></span><span class="l" id="line-26"><span class="php-comment">     * @return \Traversable
-</span></span><span class="l" id="line-27"><span class="php-comment">     *                      The children
+</span></span><span class="l" id="line-27"><span class="php-comment">     *   The children
 </span></span><span class="l" id="line-28"><span class="php-comment">     */</span>
 </span><span class="l" id="line-29">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> children(): \Traversable;
 </span><span class="l" id="line-30">
@@ -100,7 +100,7 @@
 </span></span><span class="l" id="line-32"><span class="php-comment">     * The amount of children a node has.
 </span></span><span class="l" id="line-33"><span class="php-comment">     *
 </span></span><span class="l" id="line-34"><span class="php-comment">     * @return int
-</span></span><span class="l" id="line-35"><span class="php-comment">     *             The amount of children
+</span></span><span class="l" id="line-35"><span class="php-comment">     *   The amount of children
 </span></span><span class="l" id="line-36"><span class="php-comment">     */</span>
 </span><span class="l" id="line-37">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> degree(): int;
 </span><span class="l" id="line-38">
@@ -108,7 +108,7 @@
 </span></span><span class="l" id="line-40"><span class="php-comment">     * Get the node depth from the root node.
 </span></span><span class="l" id="line-41"><span class="php-comment">     *
 </span></span><span class="l" id="line-42"><span class="php-comment">     * @return int
-</span></span><span class="l" id="line-43"><span class="php-comment">     *             The depth is the number of nodes before root
+</span></span><span class="l" id="line-43"><span class="php-comment">     *   The depth is the number of nodes before root
 </span></span><span class="l" id="line-44"><span class="php-comment">     */</span>
 </span><span class="l" id="line-45">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> depth(): int;
 </span><span class="l" id="line-46">
@@ -116,7 +116,7 @@
 </span></span><span class="l" id="line-48"><span class="php-comment">     * Get the ancestors of a node.
 </span></span><span class="l" id="line-49"><span class="php-comment">     *
 </span></span><span class="l" id="line-50"><span class="php-comment">     * @return \Traversable
-</span></span><span class="l" id="line-51"><span class="php-comment">     *                      The ancestors
+</span></span><span class="l" id="line-51"><span class="php-comment">     *   The ancestors
 </span></span><span class="l" id="line-52"><span class="php-comment">     */</span>
 </span><span class="l" id="line-53">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getAncestors(): \Traversable;
 </span><span class="l" id="line-54">
@@ -124,15 +124,15 @@
 </span></span><span class="l" id="line-56"><span class="php-comment">     * Get the parent node.
 </span></span><span class="l" id="line-57"><span class="php-comment">     *
 </span></span><span class="l" id="line-58"><span class="php-comment">     * @return null|NodeInterface
-</span></span><span class="l" id="line-59"><span class="php-comment">     *                            The parent node if any, null otherwise
+</span></span><span class="l" id="line-59"><span class="php-comment">     *   The parent node if any, null otherwise
 </span></span><span class="l" id="line-60"><span class="php-comment">     */</span>
-</span><span class="l" id="line-61">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getParent(): ?self;
+</span><span class="l" id="line-61">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getParent(): ?NodeInterface;
 </span><span class="l" id="line-62">
 </span><span class="l" id="line-63">    <span class="php-comment">/**
 </span></span><span class="l" id="line-64"><span class="php-comment">     * Get the node's sibblings.
 </span></span><span class="l" id="line-65"><span class="php-comment">     *
 </span></span><span class="l" id="line-66"><span class="php-comment">     * @return \Traversable
-</span></span><span class="l" id="line-67"><span class="php-comment">     *                      The sibblings
+</span></span><span class="l" id="line-67"><span class="php-comment">     *   The sibblings
 </span></span><span class="l" id="line-68"><span class="php-comment">     */</span>
 </span><span class="l" id="line-69">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getSibblings(): \Traversable;
 </span><span class="l" id="line-70">
@@ -140,7 +140,7 @@
 </span></span><span class="l" id="line-72"><span class="php-comment">     * Get the tree height.
 </span></span><span class="l" id="line-73"><span class="php-comment">     *
 </span></span><span class="l" id="line-74"><span class="php-comment">     * @return int
-</span></span><span class="l" id="line-75"><span class="php-comment">     *             The tree height
+</span></span><span class="l" id="line-75"><span class="php-comment">     *   The tree height
 </span></span><span class="l" id="line-76"><span class="php-comment">     */</span>
 </span><span class="l" id="line-77">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> height(): int;
 </span><span class="l" id="line-78">
@@ -148,7 +148,7 @@
 </span></span><span class="l" id="line-80"><span class="php-comment">     * Check if the node has children, then it's a leaf.
 </span></span><span class="l" id="line-81"><span class="php-comment">     *
 </span></span><span class="l" id="line-82"><span class="php-comment">     * @return bool
-</span></span><span class="l" id="line-83"><span class="php-comment">     *              True if it has children, false otherwise
+</span></span><span class="l" id="line-83"><span class="php-comment">     *   True if it has children, false otherwise
 </span></span><span class="l" id="line-84"><span class="php-comment">     */</span>
 </span><span class="l" id="line-85">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isLeaf(): bool;
 </span><span class="l" id="line-86">
@@ -156,7 +156,7 @@
 </span></span><span class="l" id="line-88"><span class="php-comment">     * Check if the node is the root node (Node parent is null).
 </span></span><span class="l" id="line-89"><span class="php-comment">     *
 </span></span><span class="l" id="line-90"><span class="php-comment">     * @return bool
-</span></span><span class="l" id="line-91"><span class="php-comment">     *              True if it's a root node, false otherwise
+</span></span><span class="l" id="line-91"><span class="php-comment">     *   True if it's a root node, false otherwise
 </span></span><span class="l" id="line-92"><span class="php-comment">     */</span>
 </span><span class="l" id="line-93">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> isRoot(): bool;
 </span><span class="l" id="line-94">
@@ -164,34 +164,34 @@
 </span></span><span class="l" id="line-96"><span class="php-comment">     * Remove children.
 </span></span><span class="l" id="line-97"><span class="php-comment">     *
 </span></span><span class="l" id="line-98"><span class="php-comment">     * @param NodeInterface ...$node
-</span></span><span class="l" id="line-99"><span class="php-comment">     *                               The node to remove.
+</span></span><span class="l" id="line-99"><span class="php-comment">     *   The node to remove.
 </span></span><span class="l" id="line-100"><span class="php-comment">     *
 </span></span><span class="l" id="line-101"><span class="php-comment">     * @return NodeInterface
-</span></span><span class="l" id="line-102"><span class="php-comment">     *                       The node
+</span></span><span class="l" id="line-102"><span class="php-comment">     *   The node
 </span></span><span class="l" id="line-103"><span class="php-comment">     */</span>
-</span><span class="l" id="line-104">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> remove(self ...<span class="php-var">$node</span>): self;
+</span><span class="l" id="line-104">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> remove(NodeInterface ...<span class="php-var">$node</span>): NodeInterface;
 </span><span class="l" id="line-105">
 </span><span class="l" id="line-106">    <span class="php-comment">/**
 </span></span><span class="l" id="line-107"><span class="php-comment">     * Set the parent.
 </span></span><span class="l" id="line-108"><span class="php-comment">     *
 </span></span><span class="l" id="line-109"><span class="php-comment">     * @param NodeInterface $node
-</span></span><span class="l" id="line-110"><span class="php-comment">     *                            The parent node
+</span></span><span class="l" id="line-110"><span class="php-comment">     *   The parent node
 </span></span><span class="l" id="line-111"><span class="php-comment">     *
 </span></span><span class="l" id="line-112"><span class="php-comment">     * @return NodeInterface
-</span></span><span class="l" id="line-113"><span class="php-comment">     *                       The node
+</span></span><span class="l" id="line-113"><span class="php-comment">     *   The node
 </span></span><span class="l" id="line-114"><span class="php-comment">     */</span>
-</span><span class="l" id="line-115">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> setParent(self <span class="php-var">$node</span> = <span class="php-keyword1">null</span>): self;
+</span><span class="l" id="line-115">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> setParent(NodeInterface <span class="php-var">$node</span> = <span class="php-keyword1">null</span>): NodeInterface;
 </span><span class="l" id="line-116">
 </span><span class="l" id="line-117">    <span class="php-comment">/**
 </span></span><span class="l" id="line-118"><span class="php-comment">     * Get a clone of the object with or without children.
 </span></span><span class="l" id="line-119"><span class="php-comment">     *
 </span></span><span class="l" id="line-120"><span class="php-comment">     * @param \drupol\phptree\Node\NodeInterface ...$nodes
-</span></span><span class="l" id="line-121"><span class="php-comment">     *                                                     The children that the clone will have.
+</span></span><span class="l" id="line-121"><span class="php-comment">     *   The children that the clone will have.
 </span></span><span class="l" id="line-122"><span class="php-comment">     *
 </span></span><span class="l" id="line-123"><span class="php-comment">     * @return \drupol\phptree\Node\NodeInterface
-</span></span><span class="l" id="line-124"><span class="php-comment">     *                                            The new object
+</span></span><span class="l" id="line-124"><span class="php-comment">     *   The new object
 </span></span><span class="l" id="line-125"><span class="php-comment">     */</span>
-</span><span class="l" id="line-126">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> withChildren(self ...<span class="php-var">$nodes</span>): self;
+</span><span class="l" id="line-126">    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> withChildren(NodeInterface ...<span class="php-var">$nodes</span>): NodeInterface;
 </span><span class="l" id="line-127">}
 </span><span class="l" id="line-128"></span><br></code></pre>
     </div>
